@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "netw5100", "netw5100\netw5100.cproj", "{86A6C292-B187-4786-852B-4FD98D8F6BEC}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "libumqtt", "umqtt\libumqtt.cproj", "{43CD7AFB-B7D7-4D8A-825B-70A76D51CAD6}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "clock", "clock\clock.cproj", "{961DA12F-8342-4CBB-AD70-B8F1985E4D39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86A6C292-B187-4786-852B-4FD98D8F6BEC}.Debug|AVR.ActiveCfg = Debug|AVR
+		{86A6C292-B187-4786-852B-4FD98D8F6BEC}.Debug|AVR.Build.0 = Debug|AVR
+		{86A6C292-B187-4786-852B-4FD98D8F6BEC}.Release|AVR.ActiveCfg = Release|AVR
+		{86A6C292-B187-4786-852B-4FD98D8F6BEC}.Release|AVR.Build.0 = Release|AVR
+		{43CD7AFB-B7D7-4D8A-825B-70A76D51CAD6}.Debug|AVR.ActiveCfg = Debug|AVR
+		{43CD7AFB-B7D7-4D8A-825B-70A76D51CAD6}.Debug|AVR.Build.0 = Debug|AVR
+		{43CD7AFB-B7D7-4D8A-825B-70A76D51CAD6}.Release|AVR.ActiveCfg = Release|AVR
+		{43CD7AFB-B7D7-4D8A-825B-70A76D51CAD6}.Release|AVR.Build.0 = Release|AVR
+		{961DA12F-8342-4CBB-AD70-B8F1985E4D39}.Debug|AVR.ActiveCfg = Debug|AVR
+		{961DA12F-8342-4CBB-AD70-B8F1985E4D39}.Debug|AVR.Build.0 = Debug|AVR
+		{961DA12F-8342-4CBB-AD70-B8F1985E4D39}.Release|AVR.ActiveCfg = Release|AVR
+		{961DA12F-8342-4CBB-AD70-B8F1985E4D39}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
