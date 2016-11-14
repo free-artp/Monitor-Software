@@ -1,5 +1,5 @@
 /*
- * common.h
+ * global.h
  *
  * Created: 07.10.2016 12:13:16
  *  Author: Artp
@@ -21,18 +21,19 @@
 
 #define SPI_PORT 	PORTB			/* target-specific port containing the SPI lines */
 #define SPI_DDR  	DDRB				/* target-specific DDR for the SPI port lines */
-#define SPI_MOSI   PORTB3
-#define SPI_MISO   PORTB4
-#define SPI_SCK    PORTB5
-
+#define SPI_MOSI   0x03
+#define SPI_MISO   0x04
+#define SPI_SCK    0x05
 
 // W5100
 #define W51_SOFTRESET 1
-#define W51_NO_SPI_INIT 1
+#define W51_NO_SPIINIT 1
+#define W51_DEBUG 1
+#define W51_DEBUG_SPI 1				/* печать всего, что шлем или получаем по SPI в  W5100 */
 
 #define CS_PORT_W51		PORTB			/* target-specific port used as chip-select */
 #define CS_DDR_W51		DDRB				/* target-specific DDR for chip-select */
-#define CS_BIT_W51		PORTB2
+#define CS_BIT_W51		0x02				/* target-specific port line used as chip-select */
 
 #ifndef W51_SOFTRESET
 	#define RESET_DDR_W51   DDRD				/* target-specific DDR for reset */
@@ -49,23 +50,7 @@
 #define  MAX_BUF		512			/* largest buffer we can read from chip */
 extern unsigned char				buf[MAX_BUF];
 
-//---------------------------- DEBUG ---------------------------
-
-// W5100 debugging
-#define W51_DEBUG 1
-//#define W51_DEBUG_SPI 1				/* печать всего, что шлем или получаем по SPI в  W5100 */
-
 // MQTT
-#define MQTT_DEBUG 1						/* печать буффера mqtt перед посылкой и после получения */
-
-
-#define CONSOLE_DEBUG 1
-
-#ifdef CONSOLE_DEBUG
-#define debug_print(fmt, ...) \
-	do { fprintf(stdout, fmt, ##__VA_ARGS__); } while (0)
-#else
-#define debug_print
-#endif // DEBUG
+#define NET_DEBUG 1
 
 #endif /* COMMON_H_ */

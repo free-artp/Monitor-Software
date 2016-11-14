@@ -323,7 +323,7 @@ unsigned char		Send(unsigned char  sock, unsigned char  *buf, unsigned int  bufl
 unsigned int			Receive(unsigned char  sock, unsigned char  *buf, unsigned int  buflen);
 unsigned int			ReceivedSize(unsigned char  sock);
 
-unsigned char		ifconfig( NET_CFG  *pcfg );
+unsigned char		ifconfig( W5100_CFG  *pcfg );
 unsigned char  		SocketState(unsigned char  sock);
 
 

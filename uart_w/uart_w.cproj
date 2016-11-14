@@ -4,17 +4,19 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>6.2</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
-    <ProjectGuid>{0d9b0477-e65d-4829-be98-d672f1c83ccb}</ProjectGuid>
+    <ProjectGuid>{241f36a2-4276-4143-beef-ffe65a8971a1}</ProjectGuid>
     <avrdevice>ATmega328P</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
-    <OutputType>Executable</OutputType>
+    <OutputType>StaticLibrary</OutputType>
     <Language>C</Language>
-    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
-    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputFileName>lib$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>WcounterA</AssemblyName>
-    <Name>WcounterA</Name>
-    <RootNamespace>WcounterA</RootNamespace>
+    <AvrGccProjectExtensions>
+    </AvrGccProjectExtensions>
+    <AssemblyName>uart_w</AssemblyName>
+    <Name>uart_w</Name>
+    <RootNamespace>uart_w</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -49,21 +51,15 @@
   <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
   <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
   <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
-  <avrgcc.compiler.symbols.DefSymbols>
-    <ListValues>
-      <Value>F_CPU=16000000</Value>
-      <Value>NDEBUG</Value>
-    </ListValues>
-  </avrgcc.compiler.symbols.DefSymbols>
-  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.symbols.DefSymbols><ListValues>
+  <Value>F_CPU=16000000</Value>
+  <Value>NDEBUG</Value>
+</ListValues></avrgcc.compiler.symbols.DefSymbols>
   <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
   <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
   <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
-  <avrgcc.linker.libraries.Libraries>
-    <ListValues>
-      <Value>libm</Value>
-    </ListValues>
-  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.linker.libraries.Libraries><ListValues><Value>libm</Value></ListValues></avrgcc.linker.libraries.Libraries>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
 </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
@@ -77,64 +73,27 @@
   <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
   <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
   <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
-  <avrgcc.compiler.symbols.DefSymbols>
-    <ListValues>
-      <Value>F_CPU=16000000</Value>
-      <Value>DEBUG</Value>
-    </ListValues>
-  </avrgcc.compiler.symbols.DefSymbols>
-  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.symbols.DefSymbols><ListValues>
+  <Value>F_CPU=16000000</Value>
+  <Value>DEBUG</Value>
+</ListValues></avrgcc.compiler.symbols.DefSymbols>
   <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
   <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
-  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
   <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
-  <avrgcc.linker.libraries.Libraries>
-    <ListValues>
-      <Value>libm</Value>
-    </ListValues>
-  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.linker.libraries.Libraries><ListValues><Value>libm</Value></ListValues></avrgcc.linker.libraries.Libraries>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
   <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
 </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="hardware.c">
+    <Compile Include="uart.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="hardware.h">
+    <Compile Include="uart_w.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="mqtt.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="mqtt.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="WcounterA.c">
-      <SubType>compile</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\clock\clock.cproj">
-      <Name>clock</Name>
-      <Project>{961da12f-8342-4cbb-ad70-b8f1985e4d39}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\netw5100\netw5100.cproj">
-      <Name>netw5100</Name>
-      <Project>{86a6c292-b187-4786-852b-4fd98d8f6bec}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\uart_w\uart_w.cproj">
-      <Name>uart_w</Name>
-      <Project>{241f36a2-4276-4143-beef-ffe65a8971a1}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\umqtt\libumqtt.cproj">
-      <Name>libumqtt</Name>
-      <Project>{43cd7afb-b7d7-4d8a-825b-70a76d51cad6}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>

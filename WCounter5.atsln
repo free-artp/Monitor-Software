@@ -7,6 +7,10 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "libumqtt", "umqtt\libumqtt.
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "clock", "clock\clock.cproj", "{961DA12F-8342-4CBB-AD70-B8F1985E4D39}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "WcounterA", "WcounterA\WcounterA.cproj", "{0D9B0477-E65D-4829-BE98-D672F1C83CCB}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "uart_w", "uart_w\uart_w.cproj", "{241F36A2-4276-4143-BEEF-FFE65A8971A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -25,6 +29,14 @@ Global
 		{961DA12F-8342-4CBB-AD70-B8F1985E4D39}.Debug|AVR.Build.0 = Debug|AVR
 		{961DA12F-8342-4CBB-AD70-B8F1985E4D39}.Release|AVR.ActiveCfg = Release|AVR
 		{961DA12F-8342-4CBB-AD70-B8F1985E4D39}.Release|AVR.Build.0 = Release|AVR
+		{0D9B0477-E65D-4829-BE98-D672F1C83CCB}.Debug|AVR.ActiveCfg = Debug|AVR
+		{0D9B0477-E65D-4829-BE98-D672F1C83CCB}.Debug|AVR.Build.0 = Debug|AVR
+		{0D9B0477-E65D-4829-BE98-D672F1C83CCB}.Release|AVR.ActiveCfg = Release|AVR
+		{0D9B0477-E65D-4829-BE98-D672F1C83CCB}.Release|AVR.Build.0 = Release|AVR
+		{241F36A2-4276-4143-BEEF-FFE65A8971A1}.Debug|AVR.ActiveCfg = Debug|AVR
+		{241F36A2-4276-4143-BEEF-FFE65A8971A1}.Debug|AVR.Build.0 = Debug|AVR
+		{241F36A2-4276-4143-BEEF-FFE65A8971A1}.Release|AVR.ActiveCfg = Release|AVR
+		{241F36A2-4276-4143-BEEF-FFE65A8971A1}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

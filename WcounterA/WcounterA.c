@@ -7,45 +7,57 @@
 
 
 #include <avr/io.h>
+#include <avr/interrupt.h>
+#include <avr/pgmspace.h>
+#include <util/delay.h>
+#include <string.h>
+#include <stdio.h>
 
+#include "hardware.h"
 #include "mqtt.h"
+#include "../uart_w/uart.h"
+#include "../netw5100/netw5100.h"
+
+W5100_CFG	iface =
+{
+	{0x00,0x16,0x36,0xDE,0x58,0xF6},			// mac_addr
+	{192,168,1,233},							// ip_addr
+	{255,255,255,0},							// sub_mask
+	{192,168,1,1}							// gtw_addr
+};
+
 
 int main(void)
 {
-	unsigned char usocket;	// socket for umqtt
-	unsigned char f_uconn;	// mqtt flag about SUBSCRIBE, after CONNECT
-	char msg[6];				// mqtt message buffer
 	unsigned char c;			// console command byte
-	unsigned int rsize;		// received bytes counter
 	unsigned int operate;	// flag for main cycle
-	unsigned int cnt;		// just global counter
 
-	struct timer timer_umqtt_kepalive;
-	struct timer timer_umqtt_publish;
-	
 	operate = 1;
 
 	clock_init();
+	uart_init();
+
 	
-	init_uart();
-	stdin = stdout = &mystdout;
 	printf_P( PSTR("Startup 1") );
 	
 	//	setup_ADC();
 
 	//	fs_init();			// сделает и инициализацию SPI
-	//	init_spi();
+	spi_init();
 	
 	printf_P( PSTR(".2") );
 	
 	ifconfig( &iface );
-	usocket = 0;
-	DisconnectSocket(usocket);
-	CloseSocket(usocket);
+
 	printf_P( PSTR(".3") );
 
+//	DisconnectSocket(0);
+//	CloseSocket(0);
+
+	printf_P( PSTR(".4") );
+
 	sei();
-	printf_P( PSTR(".4\n") );
+	printf_P( PSTR(".5\n") );
 	
 	while(1)
 	{
@@ -55,8 +67,8 @@ int main(void)
 			c = getchar();
 			switch (c) {
 				case 'c':
-				DisconnectSocket(usocket);
-				CloseSocket(usocket);
+//				DisconnectSocket(usocket);
+//				CloseSocket(usocket);
 				operate = 0;
 				break;
 				case 'r':

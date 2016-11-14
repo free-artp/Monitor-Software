@@ -10,10 +10,11 @@
 #define MQTT_H_
 
 #include "../clock/timer.h"
+#include "../umqtt/umqtt.h"
 
 
 struct mqtt_connection {
-	void *private;
+	struct umqtt_connection *connection;
 	
 	unsigned char serv_addr[4];
 	unsigned int tcp_port;

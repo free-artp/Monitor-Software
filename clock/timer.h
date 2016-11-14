@@ -63,6 +63,15 @@
 
 #include "clock.h"
 
+// true/false defines
+#ifndef false
+#define false	0
+#endif
+
+#ifndef true
+#define true		-1
+#endif
+
 /**
  * A timer.
  *

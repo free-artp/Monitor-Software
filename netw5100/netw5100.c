@@ -56,18 +56,21 @@
 /*
  *  Initialize the ATmega328p SPI subsystem
  */
-#ifndef W51_NO_SPIINIT
+#ifndef W51_NO_SPI_INIT
+
 void spi_init_w51(void){
 
 	CS_PORT_W51 |= (1<<CS_BIT_W51);									// pull CS pin high
 	CS_DDR_W51 |= (1<<CS_BIT_W51);									// now make it an output
 
-	SPI_DDR = (1<<PORTB3) | (1<<PORTB5) | (1<<PORTB2);		// set MOSI, SCK and SS as output, others as input
+//	SPI_DDR = (1<<PORTB3) | (1<<PORTB5) | (1<<PORTB2);		// set MOSI, SCK and SS as output, others as input
+	SPI_DDR = (1<<SPI_MOSI) | (1<<SPI_SCK) | (1<<CS_BIT_W51);		// set MOSI, SCK and SS as output, others as input
 
 	SPCR = (1<<SPE)|(1<<MSTR);								// enable SPI, master mode 0
 	SPSR |= (1<<SPI2X);										// set the clock rate fck/2
 
 }
+
 #endif
 
 /*
@@ -129,7 +132,9 @@ void  reset(void)
 
 void  W51_write(unsigned int  addr, unsigned char  data)
 {
-//	printf("w %03x-%02x\n", addr, data);
+	#ifdef W51_DEBUG_SPI
+	printf("w %03x-%02x\n", addr, data);
+	#endif
 	select();									// enable the W5100 chip
 	xchg(W5100_WRITE_OPCODE);					// need to write a byte
 	xchg((addr & 0xff00) >> 8);					// send MSB of addr
@@ -149,7 +154,9 @@ unsigned char  W51_read(unsigned int  addr)
 	xchg(addr & 0xff);						// send LSB
 	val = xchg(0x00);						// need to send a dummy char to get response
 	deselect();								// done with the chip
-//	printf("r %03x-%02x\n", addr, val);
+	#ifdef W51_DEBUG_SPI
+	printf("r %03x-%02x\n", addr, val);
+	#endif
 	return  val;								// tell her what she's won
 }
 
@@ -158,7 +165,7 @@ unsigned char  W51_read(unsigned int  addr)
 void  W51_init(void)
 {
 
-#ifndef W51_NO_SPIINIT
+#ifndef W51_NO_SPI_INIT
 	spi_init_w51();
 #endif
 
@@ -221,7 +228,7 @@ unsigned char  W51_config(W5100_CFG  *pcfg)
 
 
 //============================================== interface ====================================
-unsigned char  ifconfig( NET_CFG  *pcfg )
+unsigned char  ifconfig( W5100_CFG  *pcfg )
 {
 	unsigned char ret;
 	ret = NET_FAIL;
