@@ -17,6 +17,13 @@
 #include "mqtt.h"
 #include "../uart_w/uart.h"
 #include "../netw5100/netw5100.h"
+#include "adc.h"
+#include "../clock/timer.h"
+
+#define CONSOLE_DEBUG 1
+//#undef CONSOLE_DEBUG
+
+#include "debug.h"
 
 W5100_CFG	iface =
 {
@@ -31,34 +38,33 @@ int main(void)
 {
 	unsigned char c;			// console command byte
 	unsigned int operate;	// flag for main cycle
+	struct timer timer_adc;
+	char msg[10];
 
 	operate = 1;
 
-	clock_init();
 	uart_init();
+	debug_print_P( "uart\n" );
 
-	
-	printf_P( PSTR("Startup 1") );
-	
-	//	setup_ADC();
+	clock_init();
+	debug_print_P( "clock %d\n" );
+
+	spi_init();
+	debug_print_P("spi\n");
+
+	setup_ADC();
+	timer_set( &timer_adc, CLOCK_SECOND * 5 );
+	debug_print_P( "adc\n" );
 
 	//	fs_init();			// сделает и инициализацию SPI
-	spi_init();
-	
-	printf_P( PSTR(".2") );
 	
 	ifconfig( &iface );
-
-	printf_P( PSTR(".3") );
-
-//	DisconnectSocket(0);
-//	CloseSocket(0);
-
-	printf_P( PSTR(".4") );
+	debug_print_P( "network\n" );
 
 	sei();
-	printf_P( PSTR(".5\n") );
-	
+	debug_print_P( "sei\n" );
+
+	debug_print_P( "main cycle\n" );
 	while(1)
 	{
 		_delay_ms(100);
@@ -66,21 +72,23 @@ int main(void)
 		if (uart_ready()) {
 			c = getchar();
 			switch (c) {
-				case 'c':
-//				DisconnectSocket(usocket);
-//				CloseSocket(usocket);
-				operate = 0;
-				break;
+				case 's':
+					operate = 0;
+					break;
 				case 'r':
-				operate = 1;
-				break;
-				case 'l':
-				//					fcat();
-				break;
+					operate = 1;
+					break;
 			}
 		}
 		
 		if (!operate) break;
-		mqtt_exec();		
-	}
+		
+		mqtt_exec();	
+		
+		if ( timer_tryreset(&timer_adc) ) {
+			sprintf( msg, "%u", DATA);
+			mqtt_publish( mqtt_full_topic_P(PSTR("data")), (uint8_t *)msg, strlen(msg));
+		}
+		
+	}	// while
 }

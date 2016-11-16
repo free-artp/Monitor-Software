@@ -37,6 +37,7 @@ SUBDIRS :=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../adc.c \
 ../hardware.c \
 ../mqtt.c \
 ../WcounterA.c
@@ -49,21 +50,25 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+adc.o \
 hardware.o \
 mqtt.o \
 WcounterA.o
 
 OBJS_AS_ARGS +=  \
+adc.o \
 hardware.o \
 mqtt.o \
 WcounterA.o
 
 C_DEPS +=  \
+adc.d \
 hardware.d \
 mqtt.d \
 WcounterA.d
 
 C_DEPS_AS_ARGS +=  \
+adc.d \
 hardware.d \
 mqtt.d \
 WcounterA.d
@@ -86,6 +91,8 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

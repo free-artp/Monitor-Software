@@ -19,7 +19,8 @@ mqtt.d mqtt.o: .././mqtt.c \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\lib\gcc\avr\4.8.1\include\stdarg.h \
  c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\string.h \
  .././../common.h .././../umqtt/umqtt.h .././../netw5100/netw5100.h \
- .././mqtt.h .././../clock/timer.h .././../clock/clock.h
+ .././mqtt.h .././../clock/timer.h .././../clock/clock.h \
+ .././../clock/clock.h .././debug.h
 
 c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-gnu-toolchain\avr\include\avr\pgmspace.h:
 
@@ -70,3 +71,7 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\avr8\ gcc\native\3.4.1061\avr8-g
 .././../clock/timer.h:
 
 .././../clock/clock.h:
+
+.././../clock/clock.h:
+
+.././debug.h:

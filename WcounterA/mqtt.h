@@ -9,6 +9,8 @@
 #ifndef MQTT_H_
 #define MQTT_H_
 
+#define MQTT_TEST_MESAGES 1
+
 #include "../clock/timer.h"
 #include "../umqtt/umqtt.h"
 
@@ -21,10 +23,14 @@ struct mqtt_connection {
 	unsigned char socket;
 
 	struct timer timer_umqtt_kepalive;
+#ifdef MQTT_TEST_MESAGES
 	struct timer timer_umqtt_publish;
+#endif
 };
 
 void mqtt_exec();
+void mqtt_publish(char *topic, uint8_t *data, int datalen);
 
+char * mqtt_full_topic_P(char * topic);
 
 #endif /* MQTT_H_ */

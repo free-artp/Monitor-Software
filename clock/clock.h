@@ -24,7 +24,8 @@
 #include <stdint.h>
 
 typedef uint32_t clock_time_t; /* This should serve for some time */
-#define CLOCK_CONF_SECOND		(clock_time_t)10
+//#define CLOCK_CONF_SECOND		(clock_time_t)10
+#define CLOCK_CONF_SECOND		(clock_time_t)500
 
 
 /**

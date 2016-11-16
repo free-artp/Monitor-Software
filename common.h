@@ -58,14 +58,4 @@ extern unsigned char				buf[MAX_BUF];
 // MQTT
 #define MQTT_DEBUG 1						/* печать буффера mqtt перед посылкой и после получения */
 
-
-#define CONSOLE_DEBUG 1
-
-#ifdef CONSOLE_DEBUG
-#define debug_print(fmt, ...) \
-	do { fprintf(stdout, fmt, ##__VA_ARGS__); } while (0)
-#else
-#define debug_print
-#endif // DEBUG
-
 #endif /* COMMON_H_ */

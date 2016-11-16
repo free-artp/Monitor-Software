@@ -42,7 +42,8 @@ void clock_init()
 
 	/* f_cpu / 256 and CTC mode */
 	TCCR1B |= _BV(CS12) | _BV(WGM12);
-	OCR1A = 6250; /* Magical constant - 10Hz - 100 ms */
+//	OCR1A = 6250; /* Magical constant - 10Hz - 100 ms */
+	OCR1A = 125; /* Magical constant - 50Hz - 2 ms */
 }
 
 clock_time_t clock_time()
