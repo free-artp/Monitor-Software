@@ -418,13 +418,13 @@ unsigned char  Send(unsigned char  sock,  unsigned char  *buf, unsigned int  buf
 	unsigned int					ptr;
 	unsigned int					offaddr;
 	unsigned int					realaddr;
-//	unsigned int					txsize;
+	unsigned int					txsize;
 	unsigned int					timeout;
 	unsigned int					sockaddr;
 
 	if (buflen == 0 || sock >= W5100_NUM_SOCKETS)  return  W5100_FAIL;		// ignore illegal requests
 	sockaddr = W5100_SKT_BASE(sock);			// calc base addr for this socket
-/*
+
 	// Make sure the TX Free Size Register is available
 	txsize = W51_read(sockaddr+W5100_TX_FSR_OFFSET);		// make sure the TX free-size reg is available
 	txsize = (((txsize & 0x00FF) << 8 ) + W51_read(sockaddr+W5100_TX_FSR_OFFSET + 1));
@@ -443,7 +443,7 @@ unsigned char  Send(unsigned char  sock,  unsigned char  *buf, unsigned int  buf
 			return  W5100_FAIL;						// show failure
 		}
 	}
-*/
+
 	// check the free size in w5100 buffer
 	timeout = 0;
 	while ( free_buff_size(sock) < buflen) {

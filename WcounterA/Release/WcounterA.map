@@ -5,7 +5,7 @@ C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a(clock.o)
 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
                               WcounterA.o (ifconfig)
 C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
-                              WcounterA.o (uart_ready)
+                              WcounterA.o (uart_init)
 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
                               mqtt.o (umqtt_circ_push)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_udivmodhi4.o)
@@ -26,26 +26,22 @@ c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-t
                               C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o) (memcpy)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strcpy.o)
                               mqtt.o (strcpy)
-c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fgetc.o)
-                              WcounterA.o (fgetc)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf.o)
                               mqtt.o (fprintf)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf_p.o)
-                              mqtt.o (fprintf_P)
-c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fputc.o)
-                              mqtt.o (fputc)
+                              WcounterA.o (fprintf_P)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(iob.o)
                               mqtt.o (__iob)
-c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(printf.o)
-                              C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o) (printf)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(sprintf.o)
-                              mqtt.o (sprintf)
+                              wood.o (sprintf)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
                               c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf.o) (vfprintf)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
                               c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen_P)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strnlen.o)
                               c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen)
+c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fputc.o)
+                              c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (fputc)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
                               c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (__ultoa_invert)
 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_prologue.o)
@@ -56,13 +52,15 @@ c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-t
 Allocating common symbols
 Common symbol       size              file
 
-DATA                0x2               adc.o
+msg                 0x14              wood.o
 timer_adc_int       0x8               adc.o
 timer_adc_sine      0x8               adc.o
 u_rxbuff            0x96              mqtt.o
 u_txbuff            0x96              mqtt.o
 buf                 0x200             mqtt.o
+Level               0x2               adc.o
 __iob               0x6               c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(iob.o)
+fl_new_data         0x1               adc.o
 
 Discarded input sections
 
@@ -80,6 +78,9 @@ Discarded input sections
  .text          0x00000000        0x0 WcounterA.o
  .data          0x00000000        0x0 WcounterA.o
  .bss           0x00000000        0x0 WcounterA.o
+ .text          0x00000000        0x0 wood.o
+ .data          0x00000000        0x0 wood.o
+ .bss           0x00000000        0x0 wood.o
  .text          0x00000000        0x0 C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a(clock.o)
  .data          0x00000000        0x0 C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a(clock.o)
  .bss           0x00000000        0x0 C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a(clock.o)
@@ -92,6 +93,8 @@ Discarded input sections
  .text          0x00000000        0x0 C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
  .data          0x00000000        0x0 C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
  .bss           0x00000000        0x0 C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
+ .text.uart_ready
+                0x00000000        0xa C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
  .text          0x00000000        0x0 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
  .data          0x00000000        0x0 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
  .bss           0x00000000        0x0 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
@@ -198,24 +201,15 @@ Discarded input sections
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strcpy.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strcpy.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strcpy.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fgetc.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fgetc.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fgetc.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf_p.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf_p.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf_p.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fputc.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fputc.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fputc.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(iob.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(iob.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(iob.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(printf.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(printf.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(printf.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(sprintf.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(sprintf.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(sprintf.o)
@@ -228,6 +222,9 @@ Discarded input sections
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strnlen.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strnlen.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fputc.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
@@ -280,6 +277,7 @@ LOAD adc.o
 LOAD hardware.o
 LOAD mqtt.o
 LOAD WcounterA.o
+LOAD wood.o
 START GROUP
 LOAD c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libm.a
 LOAD C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a
@@ -383,7 +381,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x242e
+.text           0x00000000     0x21c4
  *(.vectors)
  .vectors       0x00000000       0x68 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
                 0x00000000                __vector_default
@@ -397,90 +395,73 @@ END GROUP
  *(.trampolines*)
                 0x00000068                __trampolines_end = .
  *(.progmem*)
- .progmem.data.__c.2249
-                0x00000068        0x5 mqtt.o
- .progmem.data.__c.2240
-                0x0000006d        0xc mqtt.o
- .progmem.data.__c.2242
-                0x00000079        0xf mqtt.o
- .progmem.data.__c.2236
-                0x00000088        0xc mqtt.o
- .progmem.data.__c.2238
-                0x00000094        0xb mqtt.o
- .progmem.data.__c.2232
-                0x0000009f        0xc mqtt.o
- .progmem.data.__c.2234
-                0x000000ab       0x10 mqtt.o
- .progmem.data.__c.2227
-                0x000000bb        0xc mqtt.o
- .progmem.data.__c.2230
-                0x000000c7        0xd mqtt.o
- .progmem.data.__c.2209
-                0x000000d4        0xc mqtt.o
+ .progmem.data.__c.2193
+                0x00000068        0x8 mqtt.o
+ .progmem.data.__c.2191
+                0x00000070        0xa mqtt.o
+ .progmem.data.__c.2223
+                0x0000007a        0xc WcounterA.o
+ .progmem.data.__c.2225
+                0x00000086       0x12 WcounterA.o
+ .progmem.data.__c.2219
+                0x00000098        0xc WcounterA.o
+ .progmem.data.__c.2221
+                0x000000a4        0x5 WcounterA.o
+ .progmem.data.__c.2215
+                0x000000a9        0xc WcounterA.o
+ .progmem.data.__c.2217
+                0x000000b5        0x9 WcounterA.o
  .progmem.data.__c.2211
-                0x000000e0        0x6 mqtt.o
+                0x000000be        0xc WcounterA.o
+ .progmem.data.__c.2213
+                0x000000ca        0x5 WcounterA.o
+ .progmem.data.__c.2207
+                0x000000cf        0xc WcounterA.o
+ .progmem.data.__c.2209
+                0x000000db        0x5 WcounterA.o
+ .progmem.data.__c.2203
+                0x000000e0        0xc WcounterA.o
+ .progmem.data.__c.2205
+                0x000000ec        0xa WcounterA.o
+ .progmem.data.__c.2198
+                0x000000f6        0xc WcounterA.o
  .progmem.data.__c.2201
-                0x000000e6        0x8 mqtt.o
- .progmem.data.__c.2232
-                0x000000ee        0x5 WcounterA.o
- .progmem.data.__c.2224
-                0x000000f3        0xc WcounterA.o
- .progmem.data.__c.2226
-                0x000000ff        0xc WcounterA.o
- .progmem.data.__c.2220
-                0x0000010b        0xc WcounterA.o
- .progmem.data.__c.2222
-                0x00000117        0x5 WcounterA.o
- .progmem.data.__c.2216
-                0x0000011c        0xc WcounterA.o
- .progmem.data.__c.2218
-                0x00000128        0x9 WcounterA.o
- .progmem.data.__c.2212
-                0x00000131        0xc WcounterA.o
- .progmem.data.__c.2214
-                0x0000013d        0x5 WcounterA.o
- .progmem.data.__c.2208
-                0x00000142        0xc WcounterA.o
- .progmem.data.__c.2210
-                0x0000014e        0x5 WcounterA.o
- .progmem.data.__c.2204
-                0x00000153        0xc WcounterA.o
- .progmem.data.__c.2206
-                0x0000015f        0xa WcounterA.o
- .progmem.data.__c.2199
-                0x00000169        0xc WcounterA.o
- .progmem.data.__c.2202
-                0x00000175        0x6 WcounterA.o
-                0x0000017c                . = ALIGN (0x2)
- *fill*         0x0000017b        0x1 
+                0x00000102        0x6 WcounterA.o
+ .progmem.data.__c.2021
+                0x00000108        0x8 wood.o
+ .progmem.data.__c.2019
+                0x00000110        0x8 wood.o
+ .progmem.data.__c.2017
+                0x00000118        0x6 wood.o
+                0x0000011e                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x0000017c                __ctors_start = .
+                0x0000011e                __ctors_start = .
  *(.ctors)
-                0x0000017c                __ctors_end = .
-                0x0000017c                __dtors_start = .
+                0x0000011e                __ctors_end = .
+                0x0000011e                __dtors_start = .
  *(.dtors)
-                0x0000017c                __dtors_end = .
+                0x0000011e                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x0000017c        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
-                0x0000017c                __init
+ .init0         0x0000011e        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
+                0x0000011e                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x0000017c        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
+ .init2         0x0000011e        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x00000188       0x16 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_copy_data.o)
-                0x00000188                __do_copy_data
- .init4         0x0000019e       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
-                0x0000019e                __do_clear_bss
+ .init4         0x0000012a       0x16 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_copy_data.o)
+                0x0000012a                __do_copy_data
+ .init4         0x00000140       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_clear_bss.o)
+                0x00000140                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -491,222 +472,219 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x000001ae        0x8 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
+ .init9         0x00000150        0x8 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
  *(.init9)
  *(.text)
- .text          0x000001b6        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
-                0x000001b6                __vector_22
-                0x000001b6                __vector_1
-                0x000001b6                __vector_24
-                0x000001b6                __vector_12
-                0x000001b6                __bad_interrupt
-                0x000001b6                __vector_6
-                0x000001b6                __vector_3
-                0x000001b6                __vector_23
-                0x000001b6                __vector_25
-                0x000001b6                __vector_13
-                0x000001b6                __vector_17
-                0x000001b6                __vector_19
-                0x000001b6                __vector_7
-                0x000001b6                __vector_5
-                0x000001b6                __vector_4
-                0x000001b6                __vector_9
-                0x000001b6                __vector_2
-                0x000001b6                __vector_15
-                0x000001b6                __vector_8
-                0x000001b6                __vector_14
-                0x000001b6                __vector_10
-                0x000001b6                __vector_16
-                0x000001b6                __vector_18
-                0x000001b6                __vector_20
-                0x000001ba                . = ALIGN (0x2)
+ .text          0x00000158        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm328p.o
+                0x00000158                __vector_22
+                0x00000158                __vector_1
+                0x00000158                __vector_24
+                0x00000158                __vector_12
+                0x00000158                __bad_interrupt
+                0x00000158                __vector_6
+                0x00000158                __vector_3
+                0x00000158                __vector_23
+                0x00000158                __vector_25
+                0x00000158                __vector_13
+                0x00000158                __vector_17
+                0x00000158                __vector_19
+                0x00000158                __vector_7
+                0x00000158                __vector_5
+                0x00000158                __vector_4
+                0x00000158                __vector_9
+                0x00000158                __vector_2
+                0x00000158                __vector_15
+                0x00000158                __vector_8
+                0x00000158                __vector_14
+                0x00000158                __vector_10
+                0x00000158                __vector_16
+                0x00000158                __vector_18
+                0x00000158                __vector_20
+                0x0000015c                . = ALIGN (0x2)
  *(.text.*)
- .text.setup_ADC
-                0x000001ba       0x94 adc.o
-                0x000001ba                setup_ADC
  .text.__vector_21
-                0x0000024e      0x1b6 adc.o
-                0x0000024e                __vector_21
+                0x0000015c      0x1d2 adc.o
+                0x0000015c                __vector_21
+ .text.adc_init
+                0x0000032e       0x9e adc.o
+                0x0000032e                adc_init
  .text.spi_init
-                0x00000404       0x1a hardware.o
-                0x00000404                spi_init
+                0x000003cc       0x1a hardware.o
+                0x000003cc                spi_init
  .text.mqtt_message_callback
-                0x0000041e       0x32 mqtt.o
-                0x0000041e                mqtt_message_callback
- .text.buffer_print
-                0x00000450       0x66 mqtt.o
-                0x00000450                buffer_print
+                0x000003e6       0x32 mqtt.o
+                0x000003e6                mqtt_message_callback
  .text.mqtt_new_packet
-                0x000004b6      0x104 mqtt.o
-                0x000004b6                mqtt_new_packet
+                0x00000418       0x60 mqtt.o
+                0x00000418                mqtt_new_packet
  .text.mqtt_full_topic_P
-                0x000005ba       0x58 mqtt.o
-                0x000005ba                mqtt_full_topic_P
- .text.mqtt_connected_callback
-                0x00000612       0x6e mqtt.o
-                0x00000612                mqtt_connected_callback
+                0x00000478       0x58 mqtt.o
+                0x00000478                mqtt_full_topic_P
  .text.mqtt_exec_int
-                0x00000680      0x3ca mqtt.o
-                0x00000680                mqtt_exec_int
+                0x000004d0      0x162 mqtt.o
+                0x000004d0                mqtt_exec_int
  .text.mqtt_exec
-                0x00000a4a       0x20 mqtt.o
-                0x00000a4a                mqtt_exec
+                0x00000632       0x20 mqtt.o
+                0x00000632                mqtt_exec
  .text.mqtt_publish
-                0x00000a6a       0xd8 mqtt.o
-                0x00000a6a                mqtt_publish
+                0x00000652       0x22 mqtt.o
+                0x00000652                mqtt_publish
+ .text.mqtt_connected_callback
+                0x00000674       0x84 mqtt.o
+                0x00000674                mqtt_connected_callback
  .text.startup.main
-                0x00000b42      0x28a WcounterA.o
-                0x00000b42                main
+                0x000006f8      0x1b4 WcounterA.o
+                0x000006f8                main
+ .text.wood_init
+                0x000008ac       0x2e wood.o
+                0x000008ac                wood_init
+ .text.wood_exec
+                0x000008da      0x18c wood.o
+                0x000008da                wood_exec
+ .text.wood_msg
+                0x00000a66      0x1b4 wood.o
+                0x00000a66                wood_msg
  .text.__vector_11
-                0x00000dcc       0x4a C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a(clock.o)
-                0x00000dcc                __vector_11
+                0x00000c1a       0x4a C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a(clock.o)
+                0x00000c1a                __vector_11
  .text.clock_init
-                0x00000e16       0x32 C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a(clock.o)
-                0x00000e16                clock_init
+                0x00000c64       0x32 C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a(clock.o)
+                0x00000c64                clock_init
  .text.clock_time
-                0x00000e48       0x12 C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a(clock.o)
-                0x00000e48                clock_time
- .text.select   0x00000e5a        0x4 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x00000e5a                select
+                0x00000c96       0x12 C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a(clock.o)
+                0x00000c96                clock_time
+ .text.select   0x00000ca8        0x4 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00000ca8                select
  .text.deselect
-                0x00000e5e        0x4 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x00000e5e                deselect
- .text.xchg     0x00000e62       0x18 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x00000e62                xchg
+                0x00000cac        0x4 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00000cac                deselect
+ .text.xchg     0x00000cb0       0x18 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00000cb0                xchg
  .text.W51_write
-                0x00000e7a       0x40 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x00000e7a                W51_write
+                0x00000cc8       0x40 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00000cc8                W51_write
  .text.W51_read
-                0x00000eba       0x40 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x00000eba                W51_read
+                0x00000d08       0x40 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00000d08                W51_read
  .text.W51_init
-                0x00000efa       0x18 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x00000efa                W51_init
+                0x00000d48       0x18 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00000d48                W51_init
  .text.W51_config
-                0x00000f12      0x12e C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x00000f12                W51_config
+                0x00000d60      0x12e C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00000d60                W51_config
  .text.ifconfig
-                0x00001040       0x22 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x00001040                ifconfig
+                0x00000e8e       0x22 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00000e8e                ifconfig
  .text.SocketState
-                0x00001062        0xe C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x00001062                SocketState
+                0x00000eb0        0xe C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00000eb0                SocketState
  .text.CloseSocket
-                0x00001070       0x2c C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x00001070                CloseSocket
+                0x00000ebe       0x2c C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00000ebe                CloseSocket
  .text.OpenSocket
-                0x0000109c       0xa0 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x0000109c                OpenSocket
+                0x00000eea       0xa0 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00000eea                OpenSocket
  .text.DisconnectSocket
-                0x0000113c       0x2c C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x0000113c                DisconnectSocket
- .text.Connect  0x00001168      0x138 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x00001168                Connect
+                0x00000f8a       0x2c C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00000f8a                DisconnectSocket
+ .text.Connect  0x00000fb6       0xce C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00000fb6                Connect
  .text.free_buff_size
-                0x000012a0       0x3a C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x000012a0                free_buff_size
- .text.Send     0x000012da      0x10e C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x000012da                Send
- .text.Receive  0x000013e8       0xfe C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x000013e8                Receive
+                0x00001084       0x3a C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00001084                free_buff_size
+ .text.Send     0x000010be      0x16e C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x000010be                Send
+ .text.Receive  0x0000122c       0xfe C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x0000122c                Receive
  .text.ReceivedSize
-                0x000014e6       0x44 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
-                0x000014e6                ReceivedSize
+                0x0000132a       0x44 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x0000132a                ReceivedSize
  .text.uart_putchar
-                0x0000152a       0x22 C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
-                0x0000152a                uart_putchar
+                0x0000136e       0x22 C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
+                0x0000136e                uart_putchar
  .text.uart_getchar
-                0x0000154c       0x1e C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
-                0x0000154c                uart_getchar
- .text.uart_ready
-                0x0000156a        0xa C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
-                0x0000156a                uart_ready
+                0x00001390       0x1e C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
+                0x00001390                uart_getchar
  .text.uart_init
-                0x00001574       0x36 C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
-                0x00001574                uart_init
+                0x000013ae       0x36 C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
+                0x000013ae                uart_init
  .text.umqtt_encode_length
-                0x000015aa       0x4e C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
+                0x000013e4       0x4e C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
  .text.umqtt_circ_push
-                0x000015f8       0x92 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
-                0x000015f8                umqtt_circ_push
+                0x00001432       0x92 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
+                0x00001432                umqtt_circ_push
  .text.umqtt_circ_pop
-                0x0000168a       0x70 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
-                0x0000168a                umqtt_circ_pop
+                0x000014c4       0x70 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
+                0x000014c4                umqtt_circ_pop
  .text.umqtt_connect
-                0x000016fa      0x156 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
-                0x000016fa                umqtt_connect
+                0x00001534      0x156 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
+                0x00001534                umqtt_connect
  .text.umqtt_subscribe
-                0x00001850       0xfa C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
-                0x00001850                umqtt_subscribe
+                0x0000168a       0xfa C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
+                0x0000168a                umqtt_subscribe
  .text.umqtt_publish
-                0x0000194a       0xd6 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
-                0x0000194a                umqtt_publish
+                0x00001784       0xd6 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
+                0x00001784                umqtt_publish
  .text.umqtt_ping
-                0x00001a20       0x58 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
-                0x00001a20                umqtt_ping
+                0x0000185a       0x58 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
+                0x0000185a                umqtt_ping
  .text.umqtt_process
-                0x00001a78      0x276 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
-                0x00001a78                umqtt_process
+                0x000018b2      0x276 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
+                0x000018b2                umqtt_process
  .text.libgcc.div
-                0x00001cee       0x28 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_udivmodhi4.o)
-                0x00001cee                __udivmodhi4
+                0x00001b28       0x28 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_udivmodhi4.o)
+                0x00001b28                __udivmodhi4
  .text.libgcc.div
-                0x00001d16       0x28 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_divmodhi4.o)
-                0x00001d16                _div
-                0x00001d16                __divmodhi4
+                0x00001b50       0x28 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_divmodhi4.o)
+                0x00001b50                _div
+                0x00001b50                __divmodhi4
  .text.libgcc.mul
-                0x00001d3e       0x1e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_umulhisi3.o)
-                0x00001d3e                __umulhisi3
+                0x00001b78       0x1e c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_umulhisi3.o)
+                0x00001b78                __umulhisi3
  .text.avr-libc
-                0x00001d5c        0xe c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strcpy_P.o)
-                0x00001d5c                strcpy_P
+                0x00001b96        0xe c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strcpy_P.o)
+                0x00001b96                strcpy_P
  .text.avr-libc
-                0x00001d6a       0x12 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(memcpy.o)
-                0x00001d6a                memcpy
+                0x00001ba4       0x12 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x00001ba4                memcpy
  .text.avr-libc
-                0x00001d7c        0xe c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strcpy.o)
-                0x00001d7c                strcpy
+                0x00001bb6        0xe c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strcpy.o)
+                0x00001bb6                strcpy
  .text.avr-libc
-                0x00001d8a       0x7c c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fgetc.o)
-                0x00001d8a                fgetc
+                0x00001bc4       0x24 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf.o)
+                0x00001bc4                fprintf
  .text.avr-libc
-                0x00001e06       0x24 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf.o)
-                0x00001e06                fprintf
+                0x00001be8       0x36 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf_p.o)
+                0x00001be8                fprintf_P
  .text.avr-libc
-                0x00001e2a       0x36 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf_p.o)
-                0x00001e2a                fprintf_P
+                0x00001c1e       0x44 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                0x00001c1e                sprintf
  .text.avr-libc
-                0x00001e60       0x64 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fputc.o)
-                0x00001e60                fputc
+                0x00001c62      0x3a4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x00001c62                vfprintf
  .text.avr-libc
-                0x00001ec4       0x28 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(printf.o)
-                0x00001ec4                printf
+                0x00002006       0x16 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x00002006                strnlen_P
  .text.avr-libc
-                0x00001eec       0x44 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(sprintf.o)
-                0x00001eec                sprintf
+                0x0000201c       0x16 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x0000201c                strnlen
  .text.avr-libc
-                0x00001f30      0x3a4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
-                0x00001f30                vfprintf
+                0x00002032       0x64 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x00002032                fputc
  .text.avr-libc
-                0x000022d4       0x16 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
-                0x000022d4                strnlen_P
- .text.avr-libc
-                0x000022ea       0x16 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(strnlen.o)
-                0x000022ea                strnlen
- .text.avr-libc
-                0x00002300       0xbc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
-                0x00002300                __ultoa_invert
+                0x00002096       0xbc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x00002096                __ultoa_invert
  .text.libgcc.prologue
-                0x000023bc       0x38 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_prologue.o)
-                0x000023bc                __prologue_saves__
+                0x00002152       0x38 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_prologue.o)
+                0x00002152                __prologue_saves__
  .text.libgcc.prologue
-                0x000023f4       0x36 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_epilogue.o)
-                0x000023f4                __epilogue_restores__
-                0x0000242a                . = ALIGN (0x2)
+                0x0000218a       0x36 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_epilogue.o)
+                0x0000218a                __epilogue_restores__
+                0x000021c0                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000242a        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
-                0x0000242a                _exit
-                0x0000242a                exit
+ .fini9         0x000021c0        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
+                0x000021c0                _exit
+                0x000021c0                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -725,83 +703,88 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000242a        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
+ .fini0         0x000021c0        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000242e                _etext = .
+                0x000021c4                _etext = .
 
-.data           0x00800100      0x144 load address 0x0000242e
+.data           0x00800100       0x86 load address 0x000021c4
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
- .data.adc_Int.1485
+ .data.adc_min.1481
                 0x00800100        0x2 adc.o
- .data.adc_min.1482
-                0x00800102        0x2 adc.o
- .data.m_conn   0x00800104       0x19 mqtt.o
-                0x00800104                m_conn
- .data.u_conn   0x0080011d       0x2c mqtt.o
-                0x0080011d                u_conn
- .data.iface    0x00800149       0x12 WcounterA.o
-                0x00800149                iface
- .data.console  0x0080015b        0xe C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
-                0x0080015b                console
+ .data.m_conn   0x00800102       0x11 mqtt.o
+                0x00800102                m_conn
+ .data.u_conn   0x00800113       0x2c mqtt.o
+                0x00800113                u_conn
+ .data.iface    0x0080013f       0x12 WcounterA.o
+                0x0080013f                iface
+ .data.console  0x00800151        0xe C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
+                0x00800151                console
  *(.rodata)
  *(.rodata*)
  .rodata.str1.1
-                0x00800169       0x99 mqtt.o
- .rodata.__FUNCTION__.2265
-                0x00800202        0xd mqtt.o
- .rodata.__FUNCTION__.2229
-                0x0080020f        0xe mqtt.o
- .rodata.__FUNCTION__.2208
-                0x0080021d       0x10 mqtt.o
+                0x0080015f        0xf mqtt.o
+ .rodata.__FUNCTION__.2200
+                0x0080016e        0x5 WcounterA.o
  .rodata.str1.1
-                0x0080022d        0x3 WcounterA.o
- .rodata.__FUNCTION__.2201
-                0x00800230        0x5 WcounterA.o
- .rodata.str1.1
-                0x00800235        0xe C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
+                0x00800173       0x13 wood.o
  *(.gnu.linkonce.d*)
-                0x00800244                . = ALIGN (0x2)
- *fill*         0x00800243        0x1 
-                0x00800244                _edata = .
-                0x00800244                PROVIDE (__data_end, .)
+                0x00800186                . = ALIGN (0x2)
+                0x00800186                _edata = .
+                0x00800186                PROVIDE (__data_end, .)
 
-.bss            0x00800244      0x352
-                0x00800244                PROVIDE (__bss_start, .)
+.bss            0x00800186      0x384
+                0x00800186                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.cnt_Int.1486
-                0x00800244        0x2 adc.o
- .bss.adc_max.1483
-                0x00800246        0x2 adc.o
- .bss.adc_data.1484
-                0x00800248        0x2 adc.o
- .bss.name.2219
-                0x0080024a        0x2 mqtt.o
- .bss.cnt       0x0080024c        0x2 mqtt.o
- .bss.time      0x0080024e        0x4 C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a(clock.o)
+ .bss.cnt_Int.1485
+                0x00800186        0x2 adc.o
+ .bss.adc_Int.1484
+                0x00800188        0x2 adc.o
+ .bss.adc_max.1482
+                0x0080018a        0x2 adc.o
+ .bss.adc_data.1483
+                0x0080018c        0x2 adc.o
+ .bss.name.2206
+                0x0080018e        0x2 mqtt.o
+ .bss.timer_adc
+                0x00800190        0x8 wood.o
+ .bss.cnt_1     0x00800198        0x4 wood.o
+ .bss.cnt_0     0x0080019c        0x4 wood.o
+ .bss.len_pause
+                0x008001a0        0x4 wood.o
+ .bss.len_wood  0x008001a4        0x4 wood.o
+ .bss.cnt_wood  0x008001a8        0x2 wood.o
+ .bss.new_end   0x008001aa        0x1 wood.o
+ .bss.new_beg   0x008001ab        0x1 wood.o
+ .bss.state_wood
+                0x008001ac        0x1 wood.o
+ .bss.time      0x008001ad        0x4 C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a(clock.o)
  *(COMMON)
- COMMON         0x00800252       0x12 adc.o
-                0x00800252                DATA
-                0x00800254                timer_adc_int
-                0x0080025c                timer_adc_sine
- COMMON         0x00800264      0x32c mqtt.o
-                0x00800264                u_rxbuff
-                0x008002fa                u_txbuff
-                0x00800390                buf
- COMMON         0x00800590        0x6 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(iob.o)
-                0x00800590                __iob
-                0x00800596                PROVIDE (__bss_end, .)
-                0x0000242e                __data_load_start = LOADADDR (.data)
-                0x00002572                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x008001b1       0x13 adc.o
+                0x008001b1                timer_adc_int
+                0x008001b9                timer_adc_sine
+                0x008001c1                Level
+                0x008001c3                fl_new_data
+ COMMON         0x008001c4      0x32c mqtt.o
+                0x008001c4                u_rxbuff
+                0x0080025a                u_txbuff
+                0x008002f0                buf
+ COMMON         0x008004f0       0x14 wood.o
+                0x008004f0                msg
+ COMMON         0x00800504        0x6 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(iob.o)
+                0x00800504                __iob
+                0x0080050a                PROVIDE (__bss_end, .)
+                0x000021c4                __data_load_start = LOADADDR (.data)
+                0x0000224a                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800596        0x0
-                0x00800596                PROVIDE (__noinit_start, .)
+.noinit         0x0080050a        0x0
+                0x0080050a                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x00800596                PROVIDE (__noinit_end, .)
-                0x00800596                _end = .
-                0x00800596                PROVIDE (__heap_start, .)
+                0x0080050a                PROVIDE (__noinit_end, .)
+                0x0080050a                _end = .
+                0x0080050a                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -847,19 +830,18 @@ END GROUP
  .comment       0x00000000       0x31 hardware.o
  .comment       0x00000000       0x31 mqtt.o
  .comment       0x00000000       0x31 WcounterA.o
+ .comment       0x00000000       0x31 wood.o
  .comment       0x00000000       0x31 C:\Work\AVRStudio\WCounter5\clock\Release\libclock.a(clock.o)
  .comment       0x00000000       0x31 C:\Work\AVRStudio\WCounter5\netw5100\Release\libnetw5100.a(netw5100.o)
  .comment       0x00000000       0x31 C:\Work\AVRStudio\WCounter5\uart_w\Release\libuart_w.a(uart_w.o)
  .comment       0x00000000       0x31 C:\Work\AVRStudio\WCounter5\umqtt\Release\liblibumqtt.a(umqtt.o)
- .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fgetc.o)
  .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf.o)
  .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fprintf_p.o)
- .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fputc.o)
  .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(iob.o)
- .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(printf.o)
  .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(sprintf.o)
  .comment       0x00000030       0x2c c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
                                  0x2d (size before relaxing)
+ .comment       0x00000000       0x31 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr5\libc.a(fputc.o)
 
 .note.gnu.build-id
  *(.note.gnu.build-id)

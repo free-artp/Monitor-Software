@@ -11,12 +11,10 @@
 
 #include "../clock/timer.h"
 
-void setup_ADC(void);
+void adc_init(void);
 
-extern struct timer_adc_sine;
-extern struct timer_adc_int;
-
-extern unsigned int DATA;
+extern unsigned int Level;
+extern uint8_t fl_new_data;
 
 
 

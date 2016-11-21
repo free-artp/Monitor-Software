@@ -19,10 +19,10 @@
 #include "../netw5100/netw5100.h"
 #include "adc.h"
 #include "../clock/timer.h"
+#include "wood.h"
 
 #define CONSOLE_DEBUG 1
 //#undef CONSOLE_DEBUG
-
 #include "debug.h"
 
 W5100_CFG	iface =
@@ -37,11 +37,6 @@ W5100_CFG	iface =
 int main(void)
 {
 	unsigned char c;			// console command byte
-	unsigned int operate;	// flag for main cycle
-	struct timer timer_adc;
-	char msg[10];
-
-	operate = 1;
 
 	uart_init();
 	debug_print_P( "uart\n" );
@@ -52,8 +47,8 @@ int main(void)
 	spi_init();
 	debug_print_P("spi\n");
 
-	setup_ADC();
-	timer_set( &timer_adc, CLOCK_SECOND * 5 );
+	adc_init();
+	wood_init();
 	debug_print_P( "adc\n" );
 
 	//	fs_init();			// сделает и инициализацию SPI
@@ -64,11 +59,11 @@ int main(void)
 	sei();
 	debug_print_P( "sei\n" );
 
-	debug_print_P( "main cycle\n" );
+	debug_print_P( "go to main cycle\n" );
 	while(1)
 	{
-		_delay_ms(100);
-		
+//		_delay_ms(100);
+/*		
 		if (uart_ready()) {
 			c = getchar();
 			switch (c) {
@@ -81,14 +76,11 @@ int main(void)
 			}
 		}
 		
-		if (!operate) break;
-		
+*/		
 		mqtt_exec();	
 		
-		if ( timer_tryreset(&timer_adc) ) {
-			sprintf( msg, "%u", DATA);
-			mqtt_publish( mqtt_full_topic_P(PSTR("data")), (uint8_t *)msg, strlen(msg));
-		}
-		
+		wood_exec();
+		wood_msg();
+
 	}	// while
 }

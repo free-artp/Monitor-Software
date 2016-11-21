@@ -122,6 +122,12 @@
     <Compile Include="WcounterA.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="wood.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="wood.h">
+      <SubType>compile</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\clock\clock.cproj">

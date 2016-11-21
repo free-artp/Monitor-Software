@@ -333,5 +333,9 @@ unsigned char  		SocketState(unsigned char  sock);
 #define  NET_OK				0x00		/* success */
 #define  NET_FAIL			0xff		/* generic failure code */
 
+// W5100 debugging
+//#define W51_DEBUG 1
+
+//#define W51_DEBUG_SPI 1				/* печать всего, что шлем или получаем по SPI в  W5100 */
 
 #endif /* NETW5100_H_ */

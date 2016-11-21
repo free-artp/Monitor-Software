@@ -40,7 +40,8 @@ C_SRCS +=  \
 ../adc.c \
 ../hardware.c \
 ../mqtt.c \
-../WcounterA.c
+../WcounterA.c \
+../wood.c
 
 
 PREPROCESSING_SRCS += 
@@ -53,25 +54,29 @@ OBJS +=  \
 adc.o \
 hardware.o \
 mqtt.o \
-WcounterA.o
+WcounterA.o \
+wood.o
 
 OBJS_AS_ARGS +=  \
 adc.o \
 hardware.o \
 mqtt.o \
-WcounterA.o
+WcounterA.o \
+wood.o
 
 C_DEPS +=  \
 adc.d \
 hardware.d \
 mqtt.d \
-WcounterA.d
+WcounterA.d \
+wood.d
 
 C_DEPS_AS_ARGS +=  \
 adc.d \
 hardware.d \
 mqtt.d \
-WcounterA.d
+WcounterA.d \
+wood.d
 
 OUTPUT_FILE_PATH +=WcounterA.elf
 
@@ -91,6 +96,8 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

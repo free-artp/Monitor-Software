@@ -20,8 +20,8 @@
 #include "mqtt.h"
 #include "../clock/clock.h"
 
-#define CONSOLE_DEBUG 1
-//#undef CONSOLE_DEBUG
+//#define CONSOLE_DEBUG 1
+#undef CONSOLE_DEBUG
 #include "debug.h"
 
 unsigned char	 buf[MAX_BUF];
@@ -45,7 +45,9 @@ void buffer_print( unsigned char *buf, unsigned int len) {
 
 void mqtt_message_callback(struct umqtt_connection *uc, char *topic, uint8_t *data, int len)
 {
-	fprintf(stdout,"%s %s\n", topic, data);
+	fprintf(stdout, "%s %s\n", topic, data);
+	// последнее слово в строке и вызов wood_getparam()
+	
 }
 
 
@@ -53,12 +55,15 @@ void mqtt_connected_callback(struct umqtt_connection *u_conn){
 	struct mqtt_connection *m;
 	m = (struct umqtt_connection *)u_conn->private;
 	
-	umqtt_subscribe(u_conn, mqtt_full_topic_P( PSTR("control") ) );
+	umqtt_subscribe(u_conn, mqtt_full_topic_P( PSTR("control/#") ) );
+	
+	mqtt_publish(mqtt_full_topic_P(PSTR("connect")), u_conn->clientid, strlen(u_conn->clientid) );
 	
 	timer_set( &m->timer_umqtt_kepalive, CLOCK_SECOND * (u_conn->kalive));	// -1 ?
 #ifdef MQTT_TEST_MESAGES
-	timer_set( &m->timer_umqtt_publish, CLOCK_SECOND * (u_conn->kalive)*2);
+	timer_set( &m->timer_umqtt_publish, CLOCK_SECOND * (u_conn->kalive) * MQTT_TEST_MESAGES);
 #endif
+
 }
 
 
@@ -72,12 +77,11 @@ void mqtt_new_packet(struct umqtt_connection *u_conn) {
 	debug_print("send:%d ",rsize);
 
 	#ifdef MQTT_DEBUG
-	buffer_print(buf, rsize);
+		buffer_print(buf, rsize);
 	#endif
 	
 	if ( Send( m->socket, buf, rsize) == W5100_OK ) {
 		timer_restart( &m->timer_umqtt_kepalive );
-//		debug_print("Ok!\n");
 	} else {
 		debug_print_P("Fail\n");
 		u_conn->state = UMQTT_STATE_FAILED;
@@ -194,7 +198,7 @@ void mqtt_exec_int(struct mqtt_connection *m_conn ) {
 					break;
 				}
 				#ifdef MQTT_DEBUG
-				buffer_print(buf, rsize);
+					buffer_print(buf, rsize);
 				#endif
 				umqtt_circ_push(&u_conn->rxbuff, buf, rsize);
 				umqtt_process(u_conn);

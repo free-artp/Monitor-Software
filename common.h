@@ -49,13 +49,6 @@
 #define  MAX_BUF		512			/* largest buffer we can read from chip */
 extern unsigned char				buf[MAX_BUF];
 
-//---------------------------- DEBUG ---------------------------
 
-// W5100 debugging
-#define W51_DEBUG 1
-//#define W51_DEBUG_SPI 1				/* печать всего, что шлем или получаем по SPI в  W5100 */
-
-// MQTT
-#define MQTT_DEBUG 1						/* печать буффера mqtt перед посылкой и после получения */
 
 #endif /* COMMON_H_ */
